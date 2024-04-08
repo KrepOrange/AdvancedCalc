@@ -82,8 +82,10 @@ public class AdvancedCalc {
         System.out.print("Üssü giriniz: ");
         exponent = sc.nextInt();
 
-        for (int i = 1; i <= exponent; i++){
-            result *= base;
+        if(exponent != 0) {
+            for (int i = 1; i <= exponent; i++) {
+                result *= base;
+            }
         }
         System.out.println("Sonuç: " + result);
     }
